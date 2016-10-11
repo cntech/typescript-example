@@ -1,5 +1,5 @@
 module.exports = {
-    entry: './src/app.ts',
+    entry: './src/app',
     output: {
         filename: './dist/bundle.js'
     },
@@ -10,5 +10,8 @@ module.exports = {
                 loader: 'ts'
             }
         ]
+    },
+    resolve: {
+        extensions: ['.ts']
     }
 };
