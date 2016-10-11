@@ -3,6 +3,8 @@
 ## Install
 
 ```
+$ git clone https://github.com/cntech/typescript-example.git
+$ cd typescript-example
 $ npm install
 ```
 
