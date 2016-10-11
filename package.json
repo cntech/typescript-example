@@ -1,0 +1,15 @@
+{
+  "name": "typescript-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "node dist/bundle.js",
+    "build": "node_modules/.bin/webpack"
+  },
+  "devDependencies": {
+    "ts-loader": "^0.9.0",
+    "typescript": "^2.0.3",
+    "webpack": "^1.13.2"
+  }
+}
