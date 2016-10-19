@@ -1,6 +1,6 @@
-import Message from './lib/message';
+import Message from './message';
 
-class HelloWorld implements Message {
+class DefaultMessage implements Message {
     constructor(private _messageText: string) {}
     get messageText(): string {
       return this._messageText
@@ -10,4 +10,4 @@ class HelloWorld implements Message {
     }
 }
 
-export default HelloWorld;
+export default DefaultMessage;

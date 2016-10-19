@@ -1,7 +1,7 @@
-import HelloWorld from './hello-world';
-import HtmlMessage from './lib/html-message';
+import DefaultMessage from './default-message';
+import HtmlMessage from './html-message';
 
-class HtmlHelloWorld extends HelloWorld implements HtmlMessage {
+class DefaultHtmlMessage extends DefaultMessage implements HtmlMessage {
     public print() {
         let element: Element = document.body;
         this.printToElement(element);
@@ -12,4 +12,4 @@ class HtmlHelloWorld extends HelloWorld implements HtmlMessage {
     }
 }
 
-export default HtmlHelloWorld;
+export default DefaultHtmlMessage;

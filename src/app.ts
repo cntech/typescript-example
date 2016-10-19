@@ -1,17 +1,25 @@
 import Message from './lib/message';
 import HtmlMessage from './lib/html-message';
-import HelloWorld from './hello-world';
-import HtmlHelloWorld from './html-hello-world';
+import DefaultMessage from './lib/default-message';
+import DefaultHtmlMessage from './lib/default-html-message';
+import HtmlLinkMessage from './lib/html-link-message';
 
 if(typeof window === 'undefined') {
     // node js
-    let helloWorld: Message = new HelloWorld('hello, nxa-world');
-    helloWorld.print();
+    let helloWorldMessage: Message = new DefaultMessage('hello, nxa-world');
+    helloWorldMessage.print();
 } else {
     // browser window
-    let bodyHelloWorld: Message = new HtmlHelloWorld('hello, nxa-world from <body>');
-    let divHelloWorld: HtmlMessage = new HtmlHelloWorld('hello, nxa-world from <div#main>');
-    bodyHelloWorld.print();
-    let mainDiv: HTMLElement = document.getElementById('main');
-    divHelloWorld.printToElement(mainDiv);
+    let headingMessage: HtmlMessage = new DefaultHtmlMessage('hello, nxa-world');
+    let bodyMessage: Message = new DefaultHtmlMessage(
+      `This is a simple TypeScript example.
+       Visit the following link to see the README.md file: `);
+    let linkMessage: Message = new HtmlLinkMessage(
+      'https://github.com/cntech/typescript-example',
+      'typescript-example'
+    );
+    let headingElement: HTMLElement = document.getElementById('heading');
+    headingMessage.printToElement(headingElement);
+    bodyMessage.print();
+    linkMessage.print();
 }
