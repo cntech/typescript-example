@@ -2,8 +2,8 @@ import DefaultHtmlMessage from './default-html-message';
 import HtmlMessage from './html-message';
 
 class HtmlLinkMessage extends DefaultHtmlMessage implements HtmlMessage {
-    constructor(private _url: string, messageText: string) {
-      super(messageText);
+    constructor(private _url: string, messageText?: string) {
+      super(messageText? messageText : _url);
     }
     get url() {
       return this._url;
