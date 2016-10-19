@@ -23,3 +23,7 @@ $ npm start
 ```
 
 Now you see "hello, nxa-world".
+
+## Run in Browser
+
+Double-click the **index.html** file.
