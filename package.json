@@ -9,12 +9,10 @@
     "build": "node_modules/.bin/webpack",
     "postinstall": "npm run build"
   },
-  "devDependencies": {
+  "dependencies": {
     "ts-loader": "^0.9.0",
     "typescript": "^2.0.3",
-    "webpack": "^1.13.2"
-  },
-  "dependencies": {
+    "webpack": "^1.13.2",
     "express": "^4.14.0"
   }
 }
