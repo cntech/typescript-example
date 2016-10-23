@@ -23,7 +23,7 @@ if(typeof window === 'undefined') {
         `This is a simple TypeScript example.
          All you can see here was printed by a compiled TypeScript program.`);
     let secondBodyMessage: Message = new DefaultHtmlMessage(
-         `Visit the following link to see the README.md file:`);
+         `Visit the following page to see the README.md file:`);
     let linkMessage: Message = new HtmlLinkMessage(
         'https://github.com/cntech/typescript-example');
     let headingElement: HTMLElement = document.getElementById('heading');
