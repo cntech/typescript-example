@@ -19,11 +19,25 @@ Now you can inspect the resulting JavaScripts.
 ## Run
 
 ```
-$ npm start
+$ npm run node
 ```
 
 Now you see "hello, nxa-world".
 
 ## Run in Browser
 
+### Option #1
+
 Double-click the **index.html** file.
+
+### Option #2
+
+```
+$ npm start
+```
+
+Then visit http://localhost:8080.
+
+### Option #3
+
+Visit https://typescript-example.herokuapp.com.
