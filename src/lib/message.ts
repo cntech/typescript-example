@@ -1,5 +1,5 @@
 interface Message {
-    print()
+    print(): void
 }
 
 export default Message;
